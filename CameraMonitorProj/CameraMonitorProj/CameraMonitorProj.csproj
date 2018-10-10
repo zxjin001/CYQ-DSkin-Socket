@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9B114EB-D161-4C33-B6C4-8F014E6B9E6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CameraMonitorProj</RootNamespace>
+    <AssemblyName>CameraMonitorProj</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CYQ.Data, Version=5.7.8.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CYQ.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DSkin, Version=16.5.2.12, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DSkin.Design, Version=16.5.2.12, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DSkin.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="HPSocketCS, Version=5.3.1.39460, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HPSocketCS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CameraPlayerCommon.cs" />
+    <Compile Include="Common\SingleInstance.cs" />
+    <Compile Include="Common\SocketMsgCommon.cs" />
+    <Compile Include="Common\SystemCommon.cs" />
+    <Compile Include="Common\SystemInit.cs" />
+    <Compile Include="Common\UISwitchCommon.cs" />
+    <Compile Include="Common\UserLoginCommon.cs" />
+    <Compile Include="Form\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmLoginState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmLoginState.Designer.cs">
+      <DependentUpon>FrmLoginState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Common\FrmTipsMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Common\FrmTipsMsg.Designer.cs">
+      <DependentUpon>FrmTipsMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Base_Organize.cs" />
+    <Compile Include="Model\Base_User.cs" />
+    <Compile Include="Model\CommonInfo.cs" />
+    <Compile Include="Model\LoginStateEnum.cs" />
+    <Compile Include="Model\OrderType.cs" />
+    <Compile Include="Model\UnitLevelEnum.cs" />
+    <Compile Include="Model\UserLoginInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\CommonHelper.cs" />
+    <Compile Include="Util\DESEncryptHelper.cs" />
+    <Compile Include="Util\OpenSaveFileUtil.cs" />
+    <Compile Include="Util\PopuUIHelper.cs" />
+    <Compile Include="Util\SqlHelper.cs" />
+    <Compile Include="Util\XmlHelper.cs" />
+    <EmbeddedResource Include="Form\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmLoginState.resx">
+      <DependentUpon>FrmLoginState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Common\FrmTipsMsg.resx">
+      <DependentUpon>FrmTipsMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splitScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sysSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stateCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stateDefault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stateEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rigthClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resources\close1.png" />
+    <None Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Control\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

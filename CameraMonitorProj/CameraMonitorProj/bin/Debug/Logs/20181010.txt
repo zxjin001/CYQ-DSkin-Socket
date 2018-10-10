@@ -1,0 +1,29 @@
+
+---------------------------------------
+V5.7.8.6 Record On : 2018/10/10 8:11:07 
+---------------------------------------
+
+未将对象引用设置到对象的实例。
+   在 CameraMonitorProj.Common.UserLoginCommon.SendLoginState(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 52
+   在 CameraMonitorProj.Common.UserLoginCommon.UserLogin(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 22
+---------------------------------------
+V5.7.8.6 Record On : 2018/10/10 8:21:40 
+---------------------------------------
+
+未将对象引用设置到对象的实例。
+   在 CameraMonitorProj.Common.UserLoginCommon.SendLoginState(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 52
+   在 CameraMonitorProj.Common.UserLoginCommon.UserLogin(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 22
+---------------------------------------
+V5.7.8.6 Record On : 2018/10/10 8:26:46 
+---------------------------------------
+
+未将对象引用设置到对象的实例。
+   在 CameraMonitorProj.Common.UserLoginCommon.SendLoginState(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 52
+   在 CameraMonitorProj.Common.UserLoginCommon.UserLogin(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 22
+---------------------------------------
+V5.7.8.6 Record On : 2018/10/10 8:38:49 
+---------------------------------------
+
+未将对象引用设置到对象的实例。
+   在 CameraMonitorProj.Common.UserLoginCommon.SendLoginState(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 52
+   在 CameraMonitorProj.Common.UserLoginCommon.UserLogin(Boolean isLogin) 位置 F:\Practice\avd\总队视频监控项目\Code\Project\CameraMonitorProj\CameraMonitorproj\Common\UserLoginCommon.cs:行号 22
